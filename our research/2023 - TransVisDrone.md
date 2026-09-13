@@ -4,6 +4,7 @@ authors: Sangam, Dave, Sultani, Shah
 year: 2023
 venue: ICRA
 link: https://arxiv.org/abs/2210.08423
+github: https://github.com/tusharsangam/TransVisDrone
 category: #detection
 relevance: 🟢
 ---
@@ -14,6 +15,7 @@ A camera-based system to spot another drone in the sky, light enough to run onbo
 # What they built
 - Sensor: regular camera (not LiDAR)
 - Compute: small onboard chip (Jetson Xavier NX)
+- Architecture: A CNN with a "DarkNet" backbone (CSPDarkNet-53) to detect the drone's physical shape, fused with a Video Swin Transformer to track its motion across frames without needing a separate tracking script.
 - Real flight or simulation only?: Tested on recorded video + on real onboard hardware, not full live flight
 
 # Key result
